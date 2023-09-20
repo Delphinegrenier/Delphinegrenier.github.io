@@ -1,0 +1,211 @@
+<mxfile host="65bd71144e">
+    <diagram id="vSy-UZMaPG19f9jTJZUJ" name="Page-1">
+        <mxGraphModel dx="1475" dy="899" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="24" value="&lt;h1&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;u style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;Genre:&lt;br&gt;&lt;/span&gt;&lt;/u&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial; font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Action-Aventure-Zombies&lt;/font&gt;&lt;/b&gt;&lt;/h1&gt;&lt;h1&gt;&lt;b style=&quot;background-color: initial; font-size: 12px;&quot;&gt;&lt;u&gt;Inspiration:&lt;/u&gt; &lt;br&gt;&lt;/b&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;The last of us&lt;/font&gt;&lt;/b&gt;&lt;/h1&gt;&lt;h1&gt;&lt;b style=&quot;font-size: 12px; background-color: initial;&quot;&gt;&lt;u&gt;Nom:&amp;nbsp;&lt;br&gt;&lt;/u&gt;&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;Dernier Souffle&lt;/font&gt;&lt;/span&gt;&lt;/h1&gt;&lt;h1&gt;&lt;b style=&quot;background-color: initial; font-size: 12px;&quot;&gt;&lt;u&gt;Palette:&amp;nbsp;&lt;/u&gt;&lt;/b&gt;&lt;/h1&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de fond du site: &lt;br&gt;Linear Gradient de #940d1f, #000000, #272727&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de fond du contenu:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;#000000 (texture)&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de la police:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;#&lt;/b&gt;&lt;/span&gt;&lt;b style=&quot;font-size: 10px;&quot;&gt;ececec&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur des fonds des boutons:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;#940d1f&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de fond des boutons en hover:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;#ececec&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de la police des boutons:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;#ececec&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Couleur de la police des boutons en hover:&amp;nbsp;&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;#000000&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-20" y="10" width="190" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;" parent="1" source="28" target="33" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Vous réparez votre vieu radio et écoutez pour un message" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="362.75" y="170" width="137.25" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;rounded=1;" parent="1" source="33" target="35" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Écouter le message et partir" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="29" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2421" y="-1" relative="1" as="geometry">
+                        <mxPoint x="1" y="4" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;rounded=1;" parent="1" source="33" target="34" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Ignorer le message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="31" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3562" y="-3" relative="1" as="geometry">
+                        <mxPoint x="22" y="-3" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="Vous recevez un signal radio" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="374" y="280" width="120" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="34" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1070" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Vous restez à votre campement et manquez de nourriture. Vous mourrez." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640.13" y="295" width="139.87" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=10;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="35" target="39" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="434" y="580" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Vous débuter un voyage vers New Haven (campement de survivants)." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="365.25" y="460" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="39" target="95" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="630" y="620" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="74" value="Passer par la banlieue" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="57" vertex="1" connectable="0">
+                    <mxGeometry x="0.1857" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-13" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="91" style="edgeStyle=elbowEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="39" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Passer par le centre-ville" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="91" vertex="1" connectable="0">
+                    <mxGeometry x="-0.3705" y="-2" relative="1" as="geometry">
+                        <mxPoint x="2" y="43" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="Vous devez traverser la ville pour se rendre à New Haven." style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="379.25" y="552.5" width="112" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="89" target="48" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="434" y="1510" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="48" target="50" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="Mentir" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="51" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1143" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="48" target="61" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="620" y="1540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="73" value="Dire la vérité" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="60" vertex="1" connectable="0">
+                    <mxGeometry x="0.1672" relative="1" as="geometry">
+                        <mxPoint x="-11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="Vous remarquez que les individus sont ceux à qui vous avez volez le fusil. Ils remarquent votre arme et vous demande si vous êtes celui qui l'a volé." style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="350.5" y="1475" width="172" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Vous avez survécu le voyage. On vous laisse entrer à New Haven." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="358.75" y="1730" width="153" height="71" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="61" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1050" y="1460" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1070" y="1570"/>
+                            <mxPoint x="1070" y="205"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="61" value="Ils vous disent que parce qu'ils leurs manquaient une arme, l'un d'entre eux est mort. Ils sont en colère et vous tirent dessus.&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="629.86" y="1520" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="100" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="960" y="740" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1070" y="500"/>
+                            <mxPoint x="980" y="480"/>
+                            <mxPoint x="960" y="480"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="92" style="edgeStyle=elbowEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="87" target="88" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Vous êtes au centre-ville lorsque vous tombez&amp;nbsp;face à face avec des infectés." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360.25" y="955" width="150" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="88" target="90" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Non" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="93" vertex="1" connectable="0">
+                    <mxGeometry x="0.1057" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="94" style="edgeStyle=elbowEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="88" target="89" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="Oui" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="94" vertex="1" connectable="0">
+                    <mxGeometry x="-0.4475" y="-2" relative="1" as="geometry">
+                        <mxPoint x="1" y="11" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="88" value="Les infectés vous cours après et vous avez besoins d'une arme à feu pour vous défendre. Aviez-vous récupérer une arme à feu?" style="rhombus;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
+                    <mxGeometry x="350.5" y="1090" width="169.5" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="Vous utiliser votre arme et réussissez à abattre les infectés et arrivez à New Haven." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="350.5" y="1340" width="172" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" style="edgeStyle=elbowEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="90" target="28" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1070" y="500"/>
+                            <mxPoint x="1060" y="610"/>
+                            <mxPoint x="980" y="690"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="90" value="Les infectés vous courent après, vous rattrapent et vous vous faites mordre et tuer." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="635.13" y="1135" width="144.87" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" style="edgeStyle=elbowEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="95" target="98" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="700" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="95" value="Vous appercevez des survivants bloquant l'accès à la route." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="570" width="140" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" style="edgeStyle=elbowEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="98" target="100" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="840" y="781" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="108" value="Leur parler" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="99" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2773" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="101" style="edgeStyle=elbowEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="98" target="102" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="700" y="920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="103" value="Voler une arme" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="101" vertex="1" connectable="0">
+                    <mxGeometry x="-0.169" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="98" value="&lt;div style=&quot;line-height: 120%;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Vous ne pouvez pas avancer davantage, quelques armes qu'ils ont en leur possession.&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=1;align=center;" parent="1" vertex="1">
+                    <mxGeometry x="634.86" y="710" width="150.27" height="161" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="Ces survivants ne sont pas amical. Ils vous tirent dessus" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="760.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" style="edgeStyle=elbowEdgeStyle;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="102" target="87" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="Vous volez une arme à feu que vous mettez dans votre poche arrière. Ne pouvant avancer, vous rebrousser chemin vers le centre-ville" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="634.86" y="950" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="&lt;span style=&quot;color: rgb(255, 255, 255);&quot;&gt;**Utilisation d'un programme JS qui bloque le bouton &quot;oui&quot; s'ils ne sont pas passés par la banlieue et récupérés le fusil en premier lieu&lt;/span&gt;" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#a20025;fontColor=#ffffff;strokeColor=#6F0000;" parent="1" vertex="1">
+                    <mxGeometry x="138" y="1250" width="210" height="70" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
