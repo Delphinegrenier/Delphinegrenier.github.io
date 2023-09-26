@@ -27,7 +27,7 @@ let chapters = {
   },
   intersection: {
     titre: "L'intersection'",
-    description: `La décision est prise. Vous allez écouter le message radio et entreprendre le périlleux voyage vers New Haven. La ville en ruines s'étend devant vous, une toile de fond sombre pour votre quête désespérée.`,
+    description: `La décision est prise. Vous allez écouter le message radio et entreprendre le périlleux voyage vers New Haven. La ville en ruines s'étend devant vous, une toile de fond sombre pour votre quête désespérée. Vous vous trouvez devant une intersection séparant deux directions: la banlieue ou le centre-ville. Les deux chemins semblent sécuritaire, mais il n'y a aucune certitude.`,
     image: "",
     boutons: [
       {
@@ -83,7 +83,7 @@ let chapters = {
     image: "",
     boutons: [
       {
-        titre: "Utiliser l'arme",
+        titre: "Utiliser l'arme volé",
         destination: "arme",
       },
       {
@@ -143,17 +143,19 @@ let chapters = {
 };
 
 function goToChapter(cle) {
-    if (chapters[cle] !== undefined) {
-  console.log(chapters[cle].titre);
-  console.log(chapters[cle].description);
-  console.log("Options: ");
-  chapters[cle].boutons.forEach((items) => {
-    console.log(
+  if (chapters[cle] != undefined) {
+    console.log(chapters[cle].titre);
+    console.log(chapters[cle].description);
+    console.log("Options: ");
+    chapters[cle].boutons.forEach((items) => {
+      console.log(
         `➔ ${items.titre}
 Tapez goToChapter("${items.destination}")`
-    );
-  });
-}
+      );
+    });
+  } else {
+    console.log("Mauvaise clé de chapitre");
+  }
 }
 
 goToChapter("debut");

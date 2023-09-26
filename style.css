@@ -68,11 +68,11 @@ body {
     opacity: 0.4;
 }
 
-h1, h2, p, img, button {
+.logo, h2, p, img, button {
     z-index: 2;
 }
 
-h1 {
+.logo {
     font-family: Broken Detroit, sans-serif;
     font-size: 4em;
     margin: 0;
