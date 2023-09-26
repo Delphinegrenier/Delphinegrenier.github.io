@@ -1,31 +1,159 @@
 let chapters = {
-    debut: {
-        titre: "Le premier titre",
-        description: `Après de longues heures passées à réparer votre vieille radio, le grésillement cède la place à une voix brisée. Le message vous informe de l'existence d'une ville de survivants, un havre de sécurité appelé "New Haven." Votre cœur s'emballe d'espoir à l'idée d'un refuge potentiel, mais vous savez que la route vers cette destination est semée d'embûches. Votre aventure commence ici, alors que vous vous apprêtez à traverser un monde déchu et hostile pour atteindre ce bastion lointain.`,
-        image: "",
-        boutons: [{
-            titre: "aller à la fin",
-            destination: "fin"
-        }, 
-        {
-            titre: "aller à la fin pareil",
-            destination: "fin"
-        }]
-    },
-    radio: {
-        titre: "Le message radio",
-        description: "Vous recevez un message radio...",
-        image: "",
-        boutons: []
-    },
-    fin: {
-        titre: "titre2",
-        description: "description2",
-        image: "",
-        boutons: []
-    }
+  debut: {
+    titre: "Le message radio",
+    description: `Après de longues heures passées à réparer votre vieille radio dans ce nouveau monde apocalyptique, le grésillement cède la place à une voix brisée. Le message vous informe de l'existence d'une ville de survivants, un havre de sécurité appelé "New Haven." Votre cœur s'emballe d'espoir à l'idée d'un refuge potentiel, mais vous savez que la route vers cette destination est semée d'embûches. Votre aventure commence ici, alors que vous vous apprêtez à traverser un monde déchu et hostile pour atteindre ce bastion lointain.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Rester au campement",
+        destination: "campement",
+      },
+      {
+        titre: "Débuter le voyage",
+        destination: "intersection",
+      },
+    ],
+  },
+  campement: {
+    titre: "Le campement mortel",
+    description: `Dans votre hésitation, vous choisissez de rester au campement. Les jours passent, mais les réserves de nourriture s'amenuisent rapidement. La faim insupportable vous affaiblit, et votre aventure prend fin tragiquement, votre corps sans vie gisant parmi les débris.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Recommencer",
+        destination: "debut",
+      },
+    ],
+  },
+  intersection: {
+    titre: "L'intersection'",
+    description: `La décision est prise. Vous allez écouter le message radio et entreprendre le périlleux voyage vers New Haven. La ville en ruines s'étend devant vous, une toile de fond sombre pour votre quête désespérée.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Traverser la ville",
+        destination: "ville",
+      },
+      {
+        titre: "Vers la banlieue",
+        destination: "banlieue",
+      },
+    ],
+  },
+  banlieue: {
+    titre: "Bloqués en Banlieue",
+    description: `Vous choisissez de contourner la ville par la banlieue, mais une rencontre inattendue se produit. Des survivants armés bloquent votre chemin. La tension monte, et vous réalisez que vous ne pourrez pas avancer sans résoudre ce problème. Cependant, leur possession d'armes constitue une menace que vous ne pouvez ignorer. décision est prise. Vous allez écouter le message radio et entreprendre le périlleux voyage vers New Haven. La ville en ruines s'étend devant vous, une toile de fond sombre pour votre quête désespérée.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Leur parler",
+        destination: "rencontre",
+      },
+      {
+        titre: "Voler une arme",
+        destination: "vol",
+      },
+    ],
+  },
+  rencontre: {
+    titre: "La rencontre violente",
+    description: `Vous décidez de tenter votre chance en abordant les survivants armés, espérant une issue pacifique. Malheureusement, leur hostilité est manifeste, et avant même que vous ne puissiez prononcer un mot, ils ouvrent le feu, mettant brutalement fin à votre aventure.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Recommencer",
+        destination: "debut",
+      },
+    ],
+  },
+  vol: {
+    titre: "Vol et fuite",
+    description: `Avec audace, vous optez pour la discrétion, subtilisant furtivement une arme à feu et la glissant dans votre poche arrière. Incapable de progresser plus avant dans la banlieue, vous faites demi-tour et choisissez de repasser par le centre-ville, l'arme volée maintenant votre seule lueur d'espoir.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Traverser la ville",
+        destination: "ville",
+      },
+    ],
+  },
+  ville: {
+    titre: "Confrontation avec les infectés",
+    description: `Le centre-ville s'étend devant vous, mais il est tout sauf désert. Vous vous retrouvez face à face avec des infectés, leurs yeux vides et leur démarche titubante vous rappelant la nature impitoyable de ce monde. Ils vous poursuivent, et vous savez que vous aurez besoin de l'arme à feu que vous avez subtilisée pour vous défendre.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Utiliser l'arme",
+        destination: "arme",
+      },
+      {
+        titre: "S'enfuir",
+        destination: "course",
+      },
+    ],
+  },
+  course: {
+    titre: "Course contre la mort",
+    description: `Malheureusement, les infectés vous rattrapent rapidement, et vous n'avez pas d'arme pour vous défendre. Votre souffle se mélange au leur alors qu'ils s'abattent sur vous, mettant brutalement fin à votre voyage.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Recommencer",
+        destination: "debut",
+      },
+    ],
+  },
+  arme: {
+    titre: "La verité",
+    description: `Vous dégainez l'arme à feu que vous avez volée et ouvrez le feu sur les infectés qui vous poursuivent. Votre main tremble, mais vous parvenez à abattre les menaces qui vous entourent et traverser la ville. Enfin, vous atteignez New Haven, mais l'accueil n'est pas chaleureux. Les individus qui vous accueillent sont ceux à qui vous avez volé l'arme. Leurs regards accusateurs vous transpercent alors qu'ils vous demandent si vous êtes l'individu responsable du vol.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Dire la vérité",
+        destination: "confession",
+      },
+      {
+        titre: "Mentir",
+        destination: "mentir",
+      },
+    ],
+  },
+  confession: {
+    titre: "La confession",
+    description: `Face à la vérité, vous choisissez d'être honnête. Vous avouez avoir volé leur arme pour survivre, et leur colère gronde. Vous vous retrouvez sous le feu de leurs armes, mettant brutalement fin à votre quête pour New Haven.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Recommencer",
+        destination: "debut",
+      },
+    ],
+  },
+  mentir: {
+    titre: "Le Mensonge bienvenu",
+    description: `Au lieu de la vérité, vous choisissez de mentir. Vous niez avoir volé leur arme, et ils semblent vous croire. Vous êtes autorisé à entrer à New Haven, mais le poids de votre mensonge pèse sur votre conscience alors que vous poursuivez votre histoire dans cette nouvelle communauté.`,
+    image: "",
+    boutons: [
+      {
+        titre: "Recommencer",
+        destination: "debut",
+      },
+    ],
+  },
 };
 
 function goToChapter(cle) {
-    console.log(chapters[cle].description);
-};
+    if (chapters[cle] !== undefined) {
+  console.log(chapters[cle].titre);
+  console.log(chapters[cle].description);
+  console.log("Options: ");
+  chapters[cle].boutons.forEach((items) => {
+    console.log(
+        `➔ ${items.titre}
+Tapez goToChapter("${items.destination}")`
+    );
+  });
+}
+}
+
+goToChapter("debut");
