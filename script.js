@@ -2,7 +2,7 @@ let chapters = {
   debut: {
     titre: "Le message radio",
     description: `Après de longues heures passées à réparer votre vieille radio dans ce nouveau monde apocalyptique, le grésillement cède la place à une voix brisée. Le message vous informe de l'existence d'une ville de survivants, un havre de sécurité appelé "New Haven." Votre cœur s'emballe d'espoir à l'idée d'un refuge potentiel, mais vous savez que la route vers cette destination est semée d'embûches. Votre aventure commence ici, alors que vous vous apprêtez à traverser un monde déchu et hostile pour atteindre ce bastion lointain.`,
-    image: "",
+    image: "./assets/campement.png",
     boutons: [
       {
         titre: "Rester au campement",
@@ -83,8 +83,8 @@ let chapters = {
     image: "",
     boutons: [
       {
-        titre: "Utiliser l'arme volé",
-        destination: "arme",
+        titre: "Rester immobile",
+        destination: "course", // Accès au prochain chapitre s'ils ont volé l'arme - Code plus bas
       },
       {
         titre: "S'enfuir",
@@ -94,8 +94,8 @@ let chapters = {
   },
   course: {
     titre: "Course contre la mort",
-    description: `Malheureusement, les infectés vous rattrapent rapidement, et vous n'avez pas d'arme pour vous défendre. Votre souffle se mélange au leur alors qu'ils s'abattent sur vous, mettant brutalement fin à votre voyage.`,
-    image: "",
+    description: `Malheureusement, les infectés vous aggrippent, et vous n'avez pas d'arme pour vous défendre. Votre souffle se mélange au leur alors qu'ils s'abattent sur vous, mettant brutalement fin à votre voyage.`,
+    image: "https://s.yimg.com/os/creatr-uploaded-images/2022-08/83046200-28a9-11ed-b77e-4aa34b2e79ae",
     boutons: [
       {
         titre: "Recommencer",
@@ -143,6 +143,11 @@ let chapters = {
 };
 
 function goToChapter(cle) {
+  if (cle == "vol") {
+    chapters["vol"].boutons
+    chapters["ville"].boutons[0].titre = "Utiliser l'arme volé";
+    chapters["ville"].boutons[0].destination = "arme"; // Si l'utilisateurs à récupérer une arme dans le chapitre vol, il peut passer au prochain chapitre, sinon son histoire se termine
+  }
   if (chapters[cle] != undefined) {
     console.log(chapters[cle].titre);
     console.log(chapters[cle].description);
@@ -159,3 +164,4 @@ Tapez goToChapter("${items.destination}")`
 }
 
 goToChapter("debut");
+
