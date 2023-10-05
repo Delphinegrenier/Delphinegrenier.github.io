@@ -14,7 +14,7 @@ let chapters = {
       },
     ],
   },
-  campement: {
+  campement: { 
     titre: "Le campement mortel",
     description: `Dans votre hésitation, vous choisissez de rester au campement. Les jours passent, mais les réserves de nourriture s'amenuisent rapidement. La faim insupportable vous affaiblit, et votre aventure prend fin tragiquement, votre corps sans vie gisant parmi les débris.`,
     image: "./assets/campement.png",
@@ -55,7 +55,7 @@ let chapters = {
       },
     ],
   },
-  rencontre: {
+  rencontre: { 
     titre: "La rencontre violente",
     description: `Vous décidez de tenter votre chance en abordant les survivants armés, espérant une issue pacifique. Malheureusement, leur hostilité est manifeste, et avant même que vous ne puissiez prononcer un mot, ils ouvrent le feu, mettant brutalement fin à votre aventure.`,
     image: "./assets/rencontre.jpg",
@@ -83,8 +83,8 @@ let chapters = {
     image: "./assets/ville.jpg",
     boutons: [
       {
-        titre: "Utiliser l'arme volée",
-        destination: "arme",
+        titre: "Rester immobile",
+        destination: "course",
       },
       {
         titre: "S'enfuir",
@@ -92,7 +92,7 @@ let chapters = {
       },
     ],
   },
-  course: {
+  course: { 
     titre: "Course contre la mort",
     description: `Malheureusement, les infectés vous aggrippent, et vous n'avez pas d'arme pour vous défendre. Votre souffle se mélange au leur alors qu'ils s'abattent sur vous, mettant brutalement fin à votre voyage.`,
     image: "./assets/course.jpg",
@@ -118,7 +118,7 @@ let chapters = {
       },
     ],
   },
-  confession: {
+  confession: { 
     titre: "La confession",
     description: `Face à la vérité, vous choisissez d'être honnête. Vous avouez avoir volé leur arme pour survivre, et leur colère gronde. Vous vous retrouvez sous le feu de leurs armes, mettant brutalement fin à votre quête pour New Haven.`,
     image: "./assets/confession.jpg",
@@ -129,7 +129,7 @@ let chapters = {
       },
     ],
   },
-  mentir: {
+  mentir: { 
     titre: "Le Mensonge bienvenu",
     description: `Au lieu de la vérité, vous choisissez de mentir. Vous niez avoir volé leur arme, et ils semblent vous croire. Vous êtes autorisé à entrer à New Haven, mais le poids de votre mensonge pèse sur votre conscience alors que vous poursuivez votre histoire dans cette nouvelle communauté.`,
     image: "./assets/mentir.jpg",
@@ -152,59 +152,59 @@ function goToChapter(cle) {
   descriptionChapitre.innerText = chapters[cle].description;
   imageChapitre.setAttribute("src", chapters[cle].image);
 
-  
 
-// Sélectionne le div .boutons 
 
-const boutons = document.querySelector('.boutons'); 
+  // Sélectionne le div .boutons 
 
-  
+  const boutons = document.querySelector('.boutons');
 
-// Supprime tous les boutons enfants du div .boutons 
 
-while (boutons.firstChild) { 
 
-  boutons.removeChild(boutons.firstChild); 
+  // Supprime tous les boutons enfants du div .boutons 
 
-} 
+  while (boutons.firstChild) {
 
-  
+    boutons.removeChild(boutons.firstChild);
 
-// Pour chaque boutons ... 
-console.log(chapters[cle].b)
-for (let i = 0; i < chapters[cle].boutons.length; i++) { 
+  }
 
-  
 
-  // on crée un nouveau bouton 
 
-  const nouveauBtn = document.createElement('button'); 
+  // Pour chaque boutons ... 
+  console.log(chapters[cle].b)
+  for (let i = 0; i < chapters[cle].boutons.length; i++) {
 
-  
 
-  // on applique un libellé au bouton 
 
-  nouveauBtn.textContent = chapters[cle].boutons[i].titre; 
+    // on crée un nouveau bouton 
 
-  
+    const nouveauBtn = document.createElement('button');
 
-  // on appele goToChapter lorsqu'on clique le bouton 
 
-  nouveauBtn.addEventListener('click', () => { 
 
-    // la destination, c'est la destination du bouton! 
+    // on applique un libellé au bouton 
 
-    goToChapter(chapters[cle].boutons[i].destination) 
+    nouveauBtn.textContent = chapters[cle].boutons[i].titre;
 
-  }); 
 
-  
 
-  // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
+    // on appele goToChapter lorsqu'on clique le bouton 
 
-  boutons.appendChild(nouveauBtn); 
+    nouveauBtn.addEventListener('click', () => {
 
-}; 
+      // la destination, c'est la destination du bouton! 
+
+      goToChapter(chapters[cle].boutons[i].destination)
+
+    });
+
+
+
+    // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
+
+    boutons.appendChild(nouveauBtn);
+
+  };
 
 }
 
@@ -212,73 +212,53 @@ goToChapter("debut");
 
 
 function goToChapter(cle) {
-  if (cle == "vol") {
-    chapters["vol"].boutons
-    chapters["ville"].boutons[0].titre = "Utiliser l'arme volé";
-    chapters["ville"].boutons[0].destination = "arme"; // Si l'utilisateurs à récupérer une arme dans le chapitre vol, il peut passer au prochain chapitre, sinon son histoire se termine
+  let twist = false; 
+  if (cle === "vol") {
+    twist = true;
+
   }
+  if (twist) {
+    chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
+    chapters["ville"].boutons[0].destination = "arme";
+  } 
+
   if (chapters[cle] !== undefined) {
     let titreChapitre = document.querySelector("h2");
     let descriptionChapitre = document.querySelector(".description");
     let imageChapitre = document.querySelector("img");
-  
+
     titreChapitre.innerText = chapters[cle].titre;
-  
+
     descriptionChapitre.innerText = chapters[cle].description;
     imageChapitre.setAttribute("src", chapters[cle].image);
 
     // Sélectionne le div .boutons 
 
-const boutons = document.querySelector('.barreoption'); 
+    const boutons = document.querySelector('#barreoption');
 
-  
+    while (boutons.firstChild) {
 
-// Supprime tous les boutons enfants du div .boutons 
+      boutons.removeChild(boutons.firstChild);
 
-while (boutons.firstChild) { 
+    }
 
-  boutons.removeChild(boutons.firstChild); 
+    for (let i = 0; i < chapters[cle].boutons.length; i++) {
 
-} 
+      const nouveauBtn = document.createElement('button');
 
-  
+      nouveauBtn.textContent = chapters[cle].boutons[i].titre;
+      nouveauBtn.addEventListener('click', () => {
 
-// Pour chaque boutons ... 
 
-for (let i = 0; i < chapitre.boutons.length; i++) { 
+        goToChapter(chapters[cle].boutons[i].destination)
 
-  
+      });
 
-  // on crée un nouveau bouton 
+      boutons.appendChild(nouveauBtn);
 
-  const nouveauBtn = document.createElement('button'); 
-
-  
-
-  // on applique un libellé au bouton 
-
-  nouveauBtn.textContent = chapitre.boutons[i].titre; 
-
-  
-
-  // on appele goToChapter lorsqu'on clique le bouton 
-
-  nouveauBtn.addEventListener('click', () => { 
-
-    // la destination, c'est la destination du bouton! 
-
-    goToChapter(chapitre.boutons[i].destination) 
-
-  }); 
-
-  
-
-  // enfin, on ajoute le bouton dans la page Web (dans le DOM) 
-
-  boutons.appendChild(nouveauBtn); 
-
-}; 
+    };
+  }
 }
-}
+
 goToChapter("debut");
 
