@@ -6,4 +6,4 @@
 <br>
 <b>Palette de couleurs:</b> [Coolor](https://coolors.co/palette/940d1f-b10808-ececec-000000-272727)
 <br>
-![Schema](https://github.com/Delphinegrenier/Vous-etes-le-heros-Dernier-Souffle/blob/main/assets/schema.png)
+![Schema](https://github.com/Delphinegrenier/Vous-etes-le-heros-Dernier-Souffle/blob/main/assets/images/schema.png)
