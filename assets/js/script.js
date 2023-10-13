@@ -146,13 +146,13 @@ function goToChapter(cle) {
   let chapitre = chapters[cle];
   let btn = chapitre.boutons;
 
-  let twist = false;
   if (cle === "vol") {
-    twist = true;
-  }
-  if (twist) {
     chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
     chapters["ville"].boutons[0].destination = "arme";
+  } 
+  if (cle === "debut") {
+    chapters["ville"].boutons[0].titre = "Rester immobile";
+    chapters["ville"].boutons[0].destination = "course";
   }
 
   if (chapitre !== undefined) {
