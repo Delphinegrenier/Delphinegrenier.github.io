@@ -155,12 +155,12 @@ function goToChapter(cle) {
     chapters["ville"].boutons[0].destination = "arme";
   }
 
-  if (chapters[cle] !== undefined) {
+  if (chapitre !== undefined) {
     let titreChapitre = document.querySelector("h2");
     let descriptionChapitre = document.querySelector(".description");
     let imageChapitre = document.querySelector("img");
 
-    titreChapitre.innerText = chapters[cle].titre;
+    titreChapitre.innerText = chapitre.titre;
 
     descriptionChapitre.innerText = chapitre.description;
     imageChapitre.setAttribute("src", chapitre.image);

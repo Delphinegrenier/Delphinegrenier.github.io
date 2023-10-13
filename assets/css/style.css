@@ -9,13 +9,13 @@
 /*Font pour LOGO*/
 @font-face {
   font-family: "Broken Detroit";
-  src: url(./assets/fonts/brokendetroit.ttf) format("truetype");
+  src: url(../fonts/brokendetroit.ttf) format("truetype");
 }
 
 /*Font pour texte*/
 @font-face {
   font-family: "Montserrat";
-  src: url(./assets/fonts/montserrat.ttf) format("truetype");
+  src: url(../fonts/montserrat.ttf) format("truetype");
 }
 
 body {
@@ -72,7 +72,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(./assets/images/texture_fond.jpg);
+  background-image: url(../images/texture_fond.jpg);
   background-size: cover;
   filter: blur(1px) grayscale(100%);
   opacity: 0.4;
