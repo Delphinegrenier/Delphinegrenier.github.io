@@ -81,7 +81,7 @@ body {
 .logo,
 h2,
 p,
-img,
+.img,
 button {
   z-index: 2;
 }
@@ -108,7 +108,7 @@ h2 {
   transition-timing-function: ease-in;
 }
 
-img {
+.img {
   max-width: 100%;
   margin: 0;
   border-radius: 10px;

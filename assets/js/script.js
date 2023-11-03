@@ -122,6 +122,7 @@ let chapters = {
     titre: "La confession",
     description: `Face à la vérité, vous choisissez d'être honnête. Vous avouez avoir volé leur arme pour survivre, et leur colère gronde. Vous vous retrouvez sous le feu de leurs armes, mettant brutalement fin à votre quête pour New Haven.`,
     image: "./assets/images/confession.jpg",
+    video: "confessionVideo",
     boutons: [
       {
         titre: "Recommencer",
@@ -133,6 +134,7 @@ let chapters = {
     titre: "Le Mensonge bienvenu",
     description: `Au lieu de la vérité, vous choisissez de mentir. Vous niez avoir volé leur arme, et ils semblent vous croire. Vous êtes autorisé à entrer à New Haven, mais le poids de votre mensonge pèse sur votre conscience alors que vous poursuivez votre histoire dans cette nouvelle communauté.`,
     image: "./assets/images/mentir.jpg",
+    video: "mentirVideo",
     boutons: [
       {
         titre: "Terminer",
@@ -145,6 +147,8 @@ let chapters = {
 function goToChapter(cle) {
   let chapitre = chapters[cle];
   let btn = chapitre.boutons;
+  //Création d'un nouvel audio
+  const audio = new Audio('./assets/audio/audio.wav');
 
   if (cle === "vol") {
     chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
@@ -165,18 +169,26 @@ function goToChapter(cle) {
     descriptionChapitre.innerText = chapitre.description;
     imageChapitre.setAttribute("src", chapitre.image);
 
+  // Ajout de video 
+    if(chapitre.video) {
+      let videoChapitre = chapitre.video;
+      let video = `<video class="img" src="./assets/video/${videoChapitre}.mp4" muted loop autoplay></video>`;
+      let div = document.querySelector("#jeu");
+      imageChapitre.parentNode.replaceChild(video, imageChapitre);
+    }
     const boutons = document.querySelector("#barreoption");
 
     while (boutons.firstChild) {
       boutons.removeChild(boutons.firstChild);
     }
-
     for (let i = 0; i < btn.length; i++) {
       const nouveauBtn = document.createElement("button");
 
       nouveauBtn.textContent = btn[i].titre;
       nouveauBtn.addEventListener("click", () => {
         goToChapter(btn[i].destination);
+        //Joue audio au click du bouton
+        audio.play();
       });
 
       boutons.appendChild(nouveauBtn);
