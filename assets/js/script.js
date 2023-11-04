@@ -148,12 +148,24 @@ function goToChapter(cle) {
   let chapitre = chapters[cle];
   let btn = chapitre.boutons;
   //Création d'un nouvel audio
-  const audio = new Audio('./assets/audio/audio.wav');
+  const audio = new Audio("./assets/audio/audio.wav");
+
+  // Création d'un "text to speech"
+  let msg = new SpeechSynthesisUtterance();
+  let voices = window.speechSynthesis.getVoices();
+  msg.voice = voices[3];
+  msg.volume = 0.0; // From 0 to 1
+  msg.rate = 1.5; // From 0.1 to 10
+  msg.pitch = 0; // From 0 to 2
+  msg.text = chapitre.description;
+  msg.lang = "fr";
+
+  speechSynthesis.speak(msg);
 
   if (cle === "vol") {
     chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
     chapters["ville"].boutons[0].destination = "arme";
-  } 
+  }
   if (cle === "debut") {
     chapters["ville"].boutons[0].titre = "Rester immobile";
     chapters["ville"].boutons[0].destination = "course";
@@ -167,15 +179,16 @@ function goToChapter(cle) {
     titreChapitre.innerText = chapitre.titre;
 
     descriptionChapitre.innerText = chapitre.description;
-    imageChapitre.setAttribute("src", chapitre.image);
+        // Ajout de video si objet 
+        if (chapitre.video) {
+          let videoChapitre = chapitre.video;
+          let video = `<video class="img" src="./assets/video/${videoChapitre}.mp4" muted loop autoplay></video>`;
+          let div = document.querySelector(".media");
+          div.removeChild(imageChapitre);
+          div.innerHTML= video;
+        }
+        imageChapitre.setAttribute("src", chapitre.image);
 
-  // Ajout de video 
-    if(chapitre.video) {
-      let videoChapitre = chapitre.video;
-      let video = `<video class="img" src="./assets/video/${videoChapitre}.mp4" muted loop autoplay></video>`;
-      let div = document.querySelector("#jeu");
-      imageChapitre.parentNode.replaceChild(video, imageChapitre);
-    }
     const boutons = document.querySelector("#barreoption");
 
     while (boutons.firstChild) {
@@ -188,6 +201,7 @@ function goToChapter(cle) {
       nouveauBtn.addEventListener("click", () => {
         goToChapter(btn[i].destination);
         //Joue audio au click du bouton
+        audio.volume = 0;
         audio.play();
       });
 
