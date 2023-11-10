@@ -147,6 +147,7 @@ let chapters = {
 function goToChapter(cle) {
   let chapitre = chapters[cle];
   let btn = chapitre.boutons;
+  let divMedia = document.querySelector(".media");
   //Création d'un nouvel audio
   const audio = new Audio("./assets/audio/audio.wav");
 
@@ -165,6 +166,7 @@ function goToChapter(cle) {
   if (cle === "vol") {
     chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
     chapters["ville"].boutons[0].destination = "arme";
+    localStorage.setItem("vol", true);
   }
   if (cle === "debut") {
     chapters["ville"].boutons[0].titre = "Rester immobile";
@@ -174,20 +176,27 @@ function goToChapter(cle) {
   if (chapitre !== undefined) {
     let titreChapitre = document.querySelector("h2");
     let descriptionChapitre = document.querySelector(".description");
-    let imageChapitre = document.querySelector("img");
 
     titreChapitre.innerText = chapitre.titre;
 
     descriptionChapitre.innerText = chapitre.description;
-        // Ajout de video si objet 
-        if (chapitre.video) {
-          let videoChapitre = chapitre.video;
-          let video = `<video class="img" src="./assets/video/${videoChapitre}.mp4" muted loop autoplay></video>`;
-          let div = document.querySelector(".media");
-          div.removeChild(imageChapitre);
-          div.innerHTML= video;
-        }
-        imageChapitre.setAttribute("src", chapitre.image);
+
+    //Enleve le premier child de DivMedia pour qu'ensuite on ajoute une nouvelle balise selon si vidéo ou non
+    while (divMedia.firstChild) {
+      divMedia.removeChild(divMedia.firstChild);
+    }
+
+    // Ajout de video
+    if (chapitre.video) {
+      let videoChapitre = chapitre.video;
+      let video = `<video class="img" src="./assets/video/${videoChapitre}.mp4" muted loop autoplay></video>`;
+      divMedia.innerHTML = video;
+    } else {
+      let nouvImg = document.createElement("img");
+      divMedia.appendChild(nouvImg);
+      nouvImg.setAttribute("src", chapitre.image);
+      nouvImg.classList.add("img");
+    }
 
     const boutons = document.querySelector("#barreoption");
 
@@ -208,6 +217,18 @@ function goToChapter(cle) {
       boutons.appendChild(nouveauBtn);
     }
   }
+  //Sauvegarde local storage
+  localStorage.setItem("cle", cle);
 }
 
-goToChapter("debut");
+let cleActuelle = localStorage.getItem("cle");
+if (localStorage) {
+  goToChapter(cleActuelle);
+}
+
+const boutonReinitialiser = document.querySelector(".boutonReinitialiser");
+boutonReinitialiser.addEventListener("click", function () {
+  localStorage.clear();
+  goToChapter("debut");
+});
+
