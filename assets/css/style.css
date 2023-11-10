@@ -18,6 +18,8 @@
   src: url(../fonts/montserrat.ttf) format("truetype");
 }
 
+
+
 body {
   display: flex;
   justify-content: center;
@@ -120,7 +122,7 @@ button {
 font-size: 14px;
 line-height: 1;
 border-radius: 500px;
-transition-property: background-color,color;
+transition-property: background-color, color, border, fill, transform;
 transition-duration: .3s;
 letter-spacing: 1px;
 text-transform: uppercase;
@@ -141,4 +143,32 @@ button:hover{
 
 b {
   color: var(--rouge);
+}
+
+.petitBTN {
+  background-color: transparent;
+  border: 2px solid var(--grispale);
+  width: 9%;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.petitBTN:hover {
+  background-color: transparent;
+  border: 2px solid var(--rougefonce);
+  width: 9%;
+  border-radius: 100%;
+}
+
+svg {
+  fill: var(--grispale);
+}
+
+#barreoption2 {
+  display: flex;
+  width: 100%;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
 }

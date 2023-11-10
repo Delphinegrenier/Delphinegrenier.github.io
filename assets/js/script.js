@@ -231,4 +231,3 @@ boutonReinitialiser.addEventListener("click", function () {
   localStorage.clear();
   goToChapter("debut");
 });
-
