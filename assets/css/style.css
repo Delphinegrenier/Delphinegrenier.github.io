@@ -156,13 +156,16 @@ b {
 
 .petitBTN:hover {
   background-color: transparent;
-  border: 2px solid var(--rougefonce);
   width: 9%;
   border-radius: 100%;
 }
 
-svg {
+.petitBTN svg {
   fill: var(--grispale);
+}
+
+.petitBTN:hover svg {
+  fill: var(--rougefonce);
 }
 
 #barreoption2 {

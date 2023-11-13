@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Delphine Grenier" />
+    <title>Le dernier souffle</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Delphine Grenier">
-  <title>Le dernier souffle</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
+  <body>
+    <div id="jeu">
+      <div class="logo"><span>DERNIER SOUFFLE</span></div>
+      <h2>Titre</h2>
+      <p class="description">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
+        dolores nam in iste accusantium nesciunt harum excepturi. Voluptatum
+        vero corporis cupiditate voluptate beatae, consectetur, laborum pariatur
+        explicabo dolorem soluta quia!Après de longues heures passées à réparer
+        votre vieille radio dans ce nouveau monde apocalyptique, le grésillement
+        cède la place à une voix brisée. Le message vous informe de l'existence
+        d'une ville de survivants, un havre de sécurité appelé
+        <b>"New Haven."</b> Votre cœur s'emballe d'espoir à l'idée d'un refuge
+        potentiel, mais vous savez que la route vers cette destination est semée
+        d'embûches. <b>Votre aventure commence ici</b>, alors que vous vous
+        apprêtez à traverser un monde déchu et hostile pour atteindre ce bastion
+        lointain.
+      </p>
+      <div class="media">
+        <img class="img" src="./assets/images/debut.jpg" />
+      </div>
 
-<body>
-  <div id="jeu">
-    <div class="logo"><span>DERNIER SOUFFLE</span></div>
-    <h2>Titre</h2>
-    <p class="description">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore
-      dolores nam in iste accusantium nesciunt harum excepturi. Voluptatum
-      vero corporis cupiditate voluptate beatae, consectetur, laborum pariatur
-      explicabo dolorem soluta quia!Après de longues heures passées à réparer
-      votre vieille radio dans ce nouveau monde apocalyptique, le grésillement
-      cède la place à une voix brisée. Le message vous informe de l'existence
-      d'une ville de survivants, un havre de sécurité appelé
-      <b>"New Haven."</b> Votre cœur s'emballe d'espoir à l'idée d'un refuge
-      potentiel, mais vous savez que la route vers cette destination est semée
-      d'embûches. <b>Votre aventure commence ici</b>, alors que vous vous
-      apprêtez à traverser un monde déchu et hostile pour atteindre ce bastion
-      lointain.
-    </p>
-    <div class="media">
-      <img class="img" src="./assets/images/debut.jpg" />
+      <div id="barreoption">
+        <button>B1</button><button>B2</button><button>B3</button>
+      </div>
+      <div id="barreoption2">
+        <button class="petitBTN boutonReinitialiser">
+          <svg
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 512 512"
+          >
+            <g id="icomoon-ignore"></g>
+            <path
+              d="M512 192h-192l71.765-71.765c-36.265-36.263-84.48-56.235-135.765-56.235s-99.5 19.972-135.765 56.235c-36.263 36.265-56.235 84.48-56.235 135.765s19.972 99.5 56.235 135.765c36.265 36.263 84.48 56.235 135.765 56.235s99.5-19.972 135.764-56.236c3.028-3.027 5.93-6.146 8.728-9.334l48.16 42.141c-46.923 53.583-115.832 87.429-192.652 87.429-141.385 0-256-114.615-256-256s114.615-256 256-256c70.693 0 134.684 28.663 181.008 74.992l74.992-74.992v192z"
+            ></path>
+          </svg>
+        </button>
+        <button class="petitBTN boutonMusique">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 544 512">
+            <g id="icomoon-ignore">
+            </g>
+            <path d="M445.020 461.020c-6.143 0-12.283-2.343-16.971-7.028-9.372-9.373-9.372-24.568 0-33.941 43.819-43.821 67.952-102.080 67.952-164.050 0-61.969-24.133-120.229-67.952-164.049-9.372-9.373-9.372-24.569 0-33.941s24.569-9.372 33.941 0c52.885 52.886 82.011 123.2 82.011 197.99s-29.126 145.104-82.011 197.99c-4.686 4.686-10.828 7.029-16.97 7.029zM359.765 415.765c-6.143 0-12.283-2.343-16.971-7.028-9.372-9.372-9.372-24.568 0-33.941 65.503-65.503 65.503-172.085 0-237.588-9.372-9.373-9.372-24.569 0-33.941 9.372-9.371 24.569-9.372 33.941 0 40.797 40.795 63.265 95.037 63.265 152.733s-22.468 111.938-63.265 152.735c-4.686 4.687-10.828 7.030-16.97 7.030v0zM274.51 370.51c-6.143 0-12.284-2.343-16.971-7.029-9.373-9.373-9.373-24.567 0-33.94 40.55-40.55 40.55-106.529 0-147.078-9.373-9.373-9.373-24.569 0-33.941s24.568-9.372 33.941 0c59.265 59.265 59.265 155.696 0 214.961-4.686 4.684-10.828 7.027-16.97 7.027z"></path>
+            <path d="M208.003 480c-4.164 0-8.256-1.625-11.317-4.687l-123.313-123.313h-57.373c-8.836 0-16-7.163-16-16v-160c0-8.836 7.164-16 16-16h57.373l123.313-123.314c4.577-4.577 11.458-5.945 17.437-3.468s9.877 8.311 9.877 14.782v416c0 6.472-3.898 12.306-9.877 14.782-1.979 0.82-4.059 1.218-6.12 1.218z"></path>
+            </svg>
+            
+        </button>
+      </div>
     </div>
-
-    <div id="barreoption">
-      <button>B1</button><button>B2</button><button>B3</button>
-    </div>
-    <div id="barreoption2"> <button class="petitBTN boutonReinitialiser"><svg version="1.1"
-          xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
-          <g id="icomoon-ignore">
-          </g>
-          <path
-            d="M512 192h-192l71.765-71.765c-36.265-36.263-84.48-56.235-135.765-56.235s-99.5 19.972-135.765 56.235c-36.263 36.265-56.235 84.48-56.235 135.765s19.972 99.5 56.235 135.765c36.265 36.263 84.48 56.235 135.765 56.235s99.5-19.972 135.764-56.236c3.028-3.027 5.93-6.146 8.728-9.334l48.16 42.141c-46.923 53.583-115.832 87.429-192.652 87.429-141.385 0-256-114.615-256-256s114.615-256 256-256c70.693 0 134.684 28.663 181.008 74.992l74.992-74.992v192z">
-          </path>
-        </svg>
-      </button>
-      <button class="petitBTN"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-          viewBox="0 0 512 512">
-
-          <path
-            d="M480 309.574v42.426h-42.426l-53.574-53.574-53.574 53.574h-42.426v-42.426l53.574-53.574-53.574-53.574v-42.426h42.426l53.574 53.574 53.574-53.574h42.426v42.426l-53.574 53.574 53.574 53.574z">
-          </path>
-          <path
-            d="M208.003 480c-4.164 0-8.256-1.625-11.317-4.687l-123.313-123.313h-57.373c-8.836 0-16-7.163-16-16v-160c0-8.836 7.164-16 16-16h57.373l123.313-123.314c4.577-4.577 11.458-5.945 17.437-3.468s9.877 8.311 9.877 14.782v416c0 6.472-3.898 12.306-9.877 14.782-1.979 0.82-4.059 1.218-6.12 1.218z">
-          </path>
-        </svg>
-      </button></div>
-  </div>
-</body>
-<script src="./assets/js/script.js"></script>
-
+  </body>
+  <script src="./assets/js/script.js"></script>
 </html>
