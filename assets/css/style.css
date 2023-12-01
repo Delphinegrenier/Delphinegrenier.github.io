@@ -84,7 +84,7 @@ body {
 h2,
 p,
 .media,
-button {
+button, input, div {
   z-index: 2;
 }
 
@@ -174,4 +174,10 @@ b {
   transition: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-in;
+}
+
+.petitBTNChck {
+  background-color: transparent;
+  width: 20%;
+  padding-top: 4%;
 }
