@@ -148,14 +148,15 @@ function goToChapter(cle) {
   let chapitre = chapters[cle];
   let btn = chapitre.boutons;
   let divMedia = document.querySelector(".media");
-  //Création d'un nouvel audio
-  const audio = new Audio("./assets/audio/audio.wav");
-
 
   if (cle === "vol") {
+    localStorage.setItem("vol", true);
+  }
+
+  const twist = localStorage.getItem("vol");
+  if (twist) {
     chapters["ville"].boutons[0].titre = "Utiliser l'arme volée";
     chapters["ville"].boutons[0].destination = "arme";
-    localStorage.setItem("vol", true);
   }
   if (cle === "debut") {
     chapters["ville"].boutons[0].titre = "Rester immobile";
@@ -198,31 +199,44 @@ function goToChapter(cle) {
       nouveauBtn.textContent = btn[i].titre;
       nouveauBtn.addEventListener("click", () => {
         goToChapter(btn[i].destination);
-        //Joue audio au click du bouton
-        audio.volume = 0.4;
-        audio.play();
       });
 
       boutons.appendChild(nouveauBtn);
     }
   }
-  const boutonMusique = document.querySelector(".boutonMusique");
-  const musique = new Audio("./assets/audio/tlou_theme.wav");
-  let sonVolume = localStorage.getItem("son");
-  boutonMusique.addEventListener("click", function () {
-    if (sonVolume) {
-      musique.play();
+  //Création d'un nouvel audio
+  const audio = new Audio("./assets/audio/audio.wav");
+
+  //création de musique
+  const boutonSon = document.querySelector(".boutonMusique");
+  const sonLocal = localStorage.getItem("son");
+
+  //Joue audio à chaque chapitre
+  if (sonLocal === "true") {
+    audio.volume = 0.4;
+    audio.play();
+    boutonSon.setAttribute("checked", "");
+  } else {
+    audio.volume = 0;
+  }
+
+  boutonSon.addEventListener("click", function () {
+    if (boutonSon.checked) {
       localStorage.setItem("son", "true");
-      
     } else {
-      musique.pause();
       localStorage.setItem("son", "false");
     }
   });
-  
+
   //Sauvegarde local storage
   localStorage.setItem("cle", cle);
-  
+
+  // Sauvegarde local storage au chargement de la page
+  if (boutonSon.checked) {
+    localStorage.setItem("son", "true");
+  } else {
+    localStorage.setItem("son", "false");
+  }
 }
 
 // Afficher la derniere page ouverte si déjà joué, sinon afficher le début.
@@ -238,8 +252,4 @@ const boutonReinitialiser = document.querySelector(".boutonReinitialiser");
 boutonReinitialiser.addEventListener("click", function () {
   localStorage.clear();
   goToChapter("debut");
-
 });
-
-
-
